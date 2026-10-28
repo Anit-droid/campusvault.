@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Document Management system</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+     <header class="main-header">
+        <div class="logo">Campus<span>Vault</span></div>
+        <nav class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Faculty Portal</a>
+        </nav>
+        <div class="user-profile">Welcome, Student</div>
+    </header>
+
+    <section class="search-hero">
+        <h1>Find Your Academic Resources Instantly</h1>
+        <div class="search-box-container">
+            <input type="text" id="searchInput" placeholder="Search by course code, title, or keyword...">
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+    </section>
+
+    <main class="dashboard-layout">
+        
+        <aside class="filter-sidebar">
+            <h3>Filter Results</h3>
+            
+            <div class="filter-group">
+                <h4>Department</h4>
+                <label><input type="checkbox" name="dept" value="it"> Information Technology</label>
+                <label><input type="checkbox" name="dept" value="cs"> Computer Science</label>
+                <label><input type="checkbox" name="dept" value="se"> Software Engineering</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Resource Type</h4>
+                <label><input type="checkbox" name="type" value="paper"> Past Exam Papers</label>
+                <label><input type="checkbox" name="type" value="slides"> Lecture Slides</label>
+                <label><input type="checkbox" name="type" value="syllabus"> Course Syllabi</label>
+            </div>
+        </aside>
+
+        <section class="document-section">
+            <h2>Available Resources</h2>
+            <div class="document-grid" id="documentGrid">
+                
+                <article class="document-card">
+                    <div class="file-icon pdf">PDF</div>
+                    <div class="card-details">
+                        <span class="course-tag">IT-301</span>
+                        <h4 class="doc-title">Database Management Systems - 2025 Midterm Paper</h4>
+                        <p class="doc-meta">Uploaded: Oct 2025 • Size: 2.4 MB</p>
+                        <a href="#" class="download-btn">Download Asset</a>
+                    </div>
+                </article>
+
+                <article class="document-card">
+                    <div class="file-icon ppt">PPTX</div>
+                    <div class="card-details">
+                        <span class="course-tag">CS-204</span>
+                        <h4 class="doc-title">Advanced Networking Architecture Lecture Slides</h4>
+                        <p class="doc-meta">Uploaded: Sep 2025 • Size: 14.1 MB</p>
+                        <a href="#" class="download-btn">Download Asset</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
